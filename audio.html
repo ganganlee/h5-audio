@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>音频播放器</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1718822_jexntchll2a.css">
+	<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="audio.js"></script>
+	<link rel="stylesheet" type="text/css" href="audio.css">
+</head>
+<body>
+	<audio preload="auto" controls id="audio">
+	  <source src="http://antiserver.kuwo.cn/anti.s?format=mp3|aac&rid=3453727&type=convert_url&response=res" />
+	  <source src="audio.ogg" />
+	  <source src="audio.wav" />
+	</audio>
+</body>
+<script type="text/javascript">
+	$( "audio" ).audioPlayer();
+</script>
+</html>
